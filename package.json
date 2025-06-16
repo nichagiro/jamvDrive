@@ -1,12 +1,13 @@
 {
-  "name": "crypgo_project",
-  "version": "0.1.0",
+  "name": "jamvdrive",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build & firebase deploy"
   },
   "dependencies": {
     "@iconify/icons-ion": "^1.2.10",
