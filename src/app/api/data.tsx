@@ -80,7 +80,8 @@ export const socials = [
   { icon: "fa6-brands:youtube", link: "https://www.youtube.com/channel/UCC_Y6PFRc3swJQOkga9OGxQ", name: "Youtube" },
 ]
 
-export const rastreoPage = "https://trackingcol.jamvdriver.com/"
+export const rastreoPageDropi = "https://trackingcol.jamvdriver.com/"
+export const rastreoPage = "https://virtech.mx/buscar-orden/"
 
 export const apiWhatsapp = "https://api.whatsapp.com";
 
@@ -96,7 +97,7 @@ export const whatsappMenuItems = [
   { label: "Medellin", href: `${apiWhatsapp}/send?phone=57${whatsappNumbers.Medellin}&text=Hola te escribo desde la pagina web` },
 ]
 
-export const url = "https://jamvdriver.com"; 
+export const url = "https://jamvdriver.com";
 
 export const metadataOptions = {
   url: url,

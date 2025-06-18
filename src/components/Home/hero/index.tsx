@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 import cellImage from "@/images/hero/banner-image.webp"
-import { rastreoPage } from '@/app/api/data'
+import { rastreoPage, rastreoPageDropi } from '@/app/api/data'
 
 import Button from '@/components/Common/Button'
 import Image from 'next/image'
@@ -25,9 +25,12 @@ const Hero = () => {
               <span className='text-primary'>promesa maxima de 24 horas</span>!
             </h1>
 
-            <div className='flex items-center justify-center lg:justify-start gap-8'>
-              <Button variant="filled" onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
+            <div className='flex flex-wrap items-center justify-center lg:justify-start gap-5'>
+              <Button variant="filled" onClick={() => open(rastreoPageDropi, "", "height=600,width=800, left=400,top=100")}>
                 Rastrear pedido Dropi
+              </Button>
+              <Button variant="outlined" onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
+                Rastrear pedido JamvDrive
               </Button>
             </div>
           </motion.div>
