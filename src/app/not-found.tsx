@@ -5,7 +5,11 @@ import Button from '@/components/Common/Button'
 import NotFoundImage from '@/images/404.webp'
 
 export const metadata: Metadata = {
-  title: '404 Page | Venus ',
+  title: '404 Page | JamvDrive ',
+  robots: {
+    follow: false,
+    index: false
+  }
 }
 
 const ErrorPage = () => {

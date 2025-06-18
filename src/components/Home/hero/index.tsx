@@ -13,21 +13,21 @@ const Hero = () => {
     <section className='relative py-5 overflow-hidden z-1' id='inicio'>
       <div className='container px-4 pt-28 lg:pt-36 pb-6'>
         <div className='grid grid-cols-12'>
-          <motion.div {...leftAnimation} className='lg:col-span-5 col-span-12'>
+          <motion.div {...leftAnimation} className='lg:col-span-5 col-span-12 lg:pt-12'>
             <div className="flex gap-6 items-center lg:justify-start justify-center">
               <div className="py-1.5 px-4 bg-primary/10 rounded-full border border-white/10">
                 <span className="text-primary font-medium">Viaja seguro</span>
               </div>
             </div>
 
-            <h1 className='font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10'>
-              Movemos tu <span className='text-primary'>empresa</span> con {' '}
-              <span className='text-primary'>transporte inteligentes</span>!
+            <h1 className='font-medium text-54 lg:text-start text-center text-white mb-10'>
+              Entregamos tus <span className='text-primary'>pedidos</span> en una {' '}
+              <span className='text-primary'>promesa maxima de 24 horas</span>!
             </h1>
 
             <div className='flex items-center justify-center lg:justify-start gap-8'>
               <Button variant="filled" onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
-                Rastrear Pedido
+                Rastrear pedido Dropi
               </Button>
             </div>
           </motion.div>

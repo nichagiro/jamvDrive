@@ -96,7 +96,7 @@ export const whatsappMenuItems = [
   { label: "Medellin", href: `${apiWhatsapp}/send?phone=57${whatsappNumbers.Medellin}&text=Hola te escribo desde la pagina web` },
 ]
 
-export const url = "https://www.jamvdrive.com";
+export const url = "https://jamvdriver.com"; 
 
 export const metadataOptions = {
   url: url,
