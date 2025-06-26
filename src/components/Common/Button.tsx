@@ -12,10 +12,10 @@ const variants = {
   outlined: "bg-transparent border border-primary text-primary hover:bg-primary hover:text-darkmode",
 };
 
-export const Button: React.FC<ButtonProps> = ({ children, className = "", variant = "filled", ...props }) => (
+export const Button: React.FC<ButtonProps> = ({ children, variant = "filled", ...props }) => (
   <button
     {...props}
-    className={`${baseClasses} ${variants[variant]} ${className}`}
+    className={`${baseClasses} ${variants[variant]}`}
   >
     {children}
   </button>
