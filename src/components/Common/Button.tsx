@@ -1,7 +1,9 @@
 import React from "react";
+import Spinner from "./Spinner";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "filled" | "outlined";
+  isLoading?: boolean;
 };
 
 const baseClasses =
@@ -12,12 +14,15 @@ const variants = {
   outlined: "bg-transparent border border-primary text-primary hover:bg-primary hover:text-darkmode",
 };
 
-export const Button: React.FC<ButtonProps> = ({ children, variant = "filled", ...props }) => (
+export const Button: React.FC<ButtonProps> = ({ children, className, disabled, isLoading, variant = "filled", ...props }) => (
   <button
     {...props}
-    className={`${baseClasses} ${variants[variant]}`}
+    className={`${baseClasses} ${variants[variant]} ${className}`}
+    disabled={disabled || isLoading}
   >
-    {children}
+    <div className="flex items-center justify-center gap-x-4">
+      {children} {isLoading && <Spinner />}
+    </div>
   </button>
 );
 

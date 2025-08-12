@@ -10,6 +10,7 @@
     "deploy": "next build & firebase deploy"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@iconify/icons-ion": "^1.2.10",
     "@iconify/react": "^5.2.1",
     "axios": "^1.8.4",

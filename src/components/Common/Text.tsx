@@ -3,7 +3,7 @@ import React, { TextareaHTMLAttributes } from 'react'
 const Text: React.FC<TextareaHTMLAttributes<HTMLTextAreaElement>> = ({ title, ...props }) => {
   return (
     <>
-      <label htmlFor={props.name ?? props.id} className='pb-1 font-semibold'>
+      <label htmlFor={props.name ?? props.id} className='pb-1 font-semibold text-primary'>
         {title}
       </label>
 

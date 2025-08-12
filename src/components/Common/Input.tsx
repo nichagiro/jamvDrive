@@ -3,7 +3,7 @@ import React, { InputHTMLAttributes } from 'react'
 const Input: React.FC<InputHTMLAttributes<HTMLInputElement>> = ({ title, ...props }) => {
   return (
     <>
-      <label htmlFor={props.name ?? props.id} className='pb-1 font-semibold'>
+      <label htmlFor={props.name ?? props.id} className='pb-1 font-semibold text-primary'>
         {title}
       </label>
 
