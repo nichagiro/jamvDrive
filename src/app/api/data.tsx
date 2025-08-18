@@ -11,6 +11,9 @@ import IconServices from "@/images/icons/icon-Services.svg";
 import IcoBlockChain from "@/images/icons/icon-blockchain.svg";
 import IconConsulting from "@/images/icons/icon-consulting.svg";
 
+import metaImagen from '@/app/metaImagen.webp'
+
+
 export const services = [
   {
     icon: IconConsulting.src,
@@ -97,14 +100,14 @@ export const whatsappMenuItems = [
   { label: "Medellin", href: `${apiWhatsapp}/send?phone=57${whatsappNumbers.Medellin}&text=Hola te escribo desde la pagina web` },
 ]
 
-export const url = "https://jamvdriver.com";
+export const url = "https://jamvdrive-b0cf0.web.app";
 
 export const metadataOptions = {
   url: url,
   title: 'Jamv Drive | Soluciones de transporte y logística empresarial en Colombia',
   description: 'Optimiza la movilidad y logística de tu empresa con Jamv Drive. Servicios personalizados, tecnología intuitiva y máxima seguridad en cada envío o traslado en Colombia.',
   images: [{
-    url: url + '/metaImagen.webp',
+    url: url + metaImagen.src,
     width: 1024,
     height: 1024,
     alt: 'Jamv Drive - Transporte y logística empresarial'

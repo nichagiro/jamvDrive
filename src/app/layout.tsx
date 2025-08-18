@@ -11,13 +11,8 @@ const font = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   authors: [{ name: 'Overweb', url: 'https://overweb.com.co' }],
-  robots: {
-    follow: false,
-    index: false,
-  },
   icons: Favicon.src
 }
-
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
