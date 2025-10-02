@@ -27,7 +27,7 @@ const MobileView = ({ setNavbarOpen, navbarOpen }: MobileViewProps) => {
 
       <nav className='flex flex-col items-start p-4'>
         {
-          headerData.map((item, index) => (
+          headerData.filter(menu => !menu.noMobile).map((item, index) => (
             <div key={index} onClick={() => setNavbarOpen(false)}>
               <MobileHeaderLink item={item} />
             </div>

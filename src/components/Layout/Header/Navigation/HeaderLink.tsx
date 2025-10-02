@@ -18,7 +18,7 @@ const HeaderLink: React.FC<{ item: HeaderItem, current?: boolean }> = ({ item, c
 
   return (
     <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <Link href={item.href} className={`text-17 flex font-medium hover:text-primary capitalized ${current ? "text-primary " : " text-muted "}`}>
+      <Link href={item.href} className={`${item.type === "button" ? "bg-blue-600 hover:bg-blue-700 p-4 rounded" :"text-17 flex font-medium hover:text-primary capitalized"} ${current ? "text-primary " : " text-muted "}`}>
         {item.label}
 
         {item.submenu && (

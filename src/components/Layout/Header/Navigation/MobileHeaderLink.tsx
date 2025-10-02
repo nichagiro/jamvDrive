@@ -14,7 +14,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
         href={item.href}
         onClick={item.submenu ? handleToggle : undefined}
-        className="flex items-center justify-between w-full py-2 focus:outline-hidden text-muted"
+        className={"flex items-center justify-between w-full py-2 focus:outline-hidden text-muted"}
       >
         {item.label}
 
