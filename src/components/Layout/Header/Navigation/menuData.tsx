@@ -7,4 +7,5 @@ export const headerData: HeaderItem[] = [
   { label: "Asesoria", href: "/#asesoria" },
   { label: "Porque elegirnos", href: "/#porque-elegirnos" },
   { label: "Contacto", href: "/contacto" },
+  { label: "Inventario", href: "https://inventariojamvdrive.rf.gd/inventario" },
 ];
