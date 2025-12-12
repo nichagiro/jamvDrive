@@ -28,22 +28,12 @@ const Hero = () => {
             <div className='flex flex-wrap items-center justify-center lg:justify-start gap-5'>
               <button
                 className="bg-orange-500 text-white border-orange-500 hover:bg-orange-900 rounded-lg text-21 font-medium py-2 px-5 transition-colors duration-200 z-50 cursor-pointer focus:outline-none"
-                onClick={() => open(rastreoPageDropi, "", "height=600,width=800, left=400,top=100")}>
+                onClick={() => open(rastreoPageDropi, "", "height=700,width=800, left=400,top=100")}>
                 Rastrear Dropi
               </button>
 
               <Button variant="filled" onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
                 Rastrear JamvDrive
-              </Button>
-
-              <button
-                className="bg-orange-500 text-white border-orange-500 hover:bg-orange-900 rounded-lg text-21 font-medium py-2 px-5 transition-colors duration-200 z-50 cursor-pointer focus:outline-none"
-                onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
-                Rastrear Temu
-              </button>
-
-              <Button variant="outlined" onClick={() => open(rastreoPage, "", "height=600,width=800, left=400,top=100")}>
-                Rastrear Shein
               </Button>
             </div>
           </motion.div>
