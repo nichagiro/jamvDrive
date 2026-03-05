@@ -91,7 +91,7 @@ export const apiWhatsapp = "https://api.whatsapp.com";
 export const whatsappNumbers = {
   Bogota: "3028327936",
   Medellin: "3013536172",
-  Cali: "3226422345",
+  Cali: "3028327936",
 }
 
 export const whatsappMenuItems = [
